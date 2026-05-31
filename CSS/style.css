@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 html {
   font-size: 62.5%;
@@ -7,4 +8,112 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+/* thuộc tính chung */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Header================================== */
+.header {
+  background: #10375c;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 76px;
+}
+.cta-logo {
+  display: flex;
+  gap: 6px;
+}
+.cta-logo .logo {
+  width: 30px;
+  height: 30px;
+}
+.cta-logo .text {
+  width: 50px;
+}
+.cta-logo .text .desc-1 {
+  color: #fff;
+  text-align: right;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.cta-logo .text .desc-2 {
+  text-align: right;
+  color: #fff;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav .nav-group {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.nav .desc {
+  color: #c9d2da;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.nav li {
+  position: relative;
+}
+
+.nav li.active::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .action {
+  display: flex;
+}
+.header .action a {
+  color: #c9d2da;
+  text-align: right;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.header .action .log-in {
+  display: flex;
+  align-items: center;
+}
+.header .action .sign-up {
+  width: 104px;
+  font-size: 1.6rem;
+  height: 44px;
+  border-radius: 22px;
+  background: #2e80ce;
+  border: 1px solid #2e80ce;
+  color: #c9d2da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 28px;
+}
+.header .action .sign-up:hover {
+  background: #1ebfc1;
+  color: #fff;
 }
