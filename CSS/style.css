@@ -16,11 +16,42 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.heading-lv2 {
+  color: #10375c;
+  text-align: center;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+/* ======common===================== */
+.btn {
+  width: 205px;
+  height: 60px;
+  font-size: 1.8rem;
+  border-radius: 30px;
+  background: #2e80ce;
+  border: 1px solid #2e80ce;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background: #1ebfc1;
+  color: #fff;
+}
 /* Header================================== */
 .header {
   background: #10375c;
 }
-.body {
+.header.fixed {
+  z-index: 1;
+  position: sticky;
+  top: -44px;
+}
+.header .body {
   display: flex;
   justify-content: space-between;
   padding-top: 38px;
@@ -72,14 +103,12 @@ body {
 .nav li {
   position: relative;
 }
-
 .nav li.active::before {
   content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #fff;
-
   position: absolute;
   left: -18px;
   top: 50%;
@@ -116,4 +145,145 @@ body {
 .header .action .sign-up:hover {
   background: #1ebfc1;
   color: #fff;
+}
+/* phần hero */
+.hero {
+  background: #10375c;
+}
+.hero .body {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 110px;
+}
+.hero .khoi-trai {
+  margin-top: 60px;
+}
+.hero .khoi-trai .title {
+  width: 517px;
+  color: #fff;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+}
+.hero .khoi-trai .desc {
+  width: 468px;
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.67;
+}
+.hero .khoi-trai .action {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-top: 38px;
+}
+/* .hero .khoi-trai .book-online {
+  width: 205px;
+  height: 60px;
+  font-size: 1.8rem;
+  border-radius: 30px;
+  background: #2e80ce;
+  border: 1px solid #2e80ce;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 46px;
+}
+.hero .khoi-trai .book-online:hover {
+  background: #1ebfc1;
+  color: #fff;
+} */
+.hero .khoi-trai .action .desc {
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.67;
+  margin: 0;
+}
+.hero .khoi-phai {
+  display: flex;
+}
+.hero .khoi-phai .img-1 {
+  width: 330px;
+  height: 540px;
+  border-radius: 6px;
+}
+.hero .khoi-phai .img-2 {
+  width: 210px;
+  height: 410px;
+  border-radius: 0 6px 6px 0;
+  align-self: center;
+}
+/* ============phần services================== */
+.services {
+  padding: 170px 0;
+}
+.services .text-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.services .text-heading .desc {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.services .heading-lv2 {
+  width: 311px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+.services .text-heading .desc {
+  width: 468px;
+  color: #575f66;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.67;
+}
+.services .content {
+  display: flex;
+}
+.services .content .img {
+  width: 570px;
+  height: 570px;
+  border-radius: 14px;
+  margin-right: 130px;
+}
+.services .content .icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 19px;
+}
+.services .content .heading-services {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.services .content .desc {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75;
+  margin-top: 8px;
+  width: 308px;
+}
+.services .content .item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.services .content .btn {
+  margin-top: 55px;
 }
